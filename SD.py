@@ -14,7 +14,7 @@ A request to this URL returns a list of documents matching the [query] with thei
 ==================================================================================================================================================================
 
 Two search processes will be done here. One to fetch all links and one to merge all articles from those links.
-Through my tests, the APIKey Default only works when searching for individual articles, not when searching for [query].
+Through my tests, the Default APIKey only works when searching for individual articles, not when searching for [query].
 To search for [query], I suggest you use the APIKEY available on the website through the Interactive API menu:
 https://dev.elsevier.com/sciencedirect.html#!/ScienceDirect_Search_V2/ScienceDirectSearchV2
 
