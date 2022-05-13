@@ -8,6 +8,7 @@ if _count > 200:
 key_query = str(input("APIKEY (Query): "))
 key_content = str(input("APIKEY (Your Key): "))
 output = open('output.json','w', encoding="utf8")
+print("\nLoading...")
 
 
 #QUERY SEARCH
@@ -16,7 +17,6 @@ url = "https://api.elsevier.com/content/search/sciencedirect?query=" + _search +
 result = requests.get(url)
 raw_data = json.loads(result.text)
 article_count = len(raw_data['search-results']['entry']) #STORE ARTICLE COUNT INSIDE JSON AS 'LENGTH' FOR LOOPING
-
 
 
 article_links = []
@@ -50,4 +50,4 @@ for link in article_links:
 
 
 json.dump(articles_json, output, indent=4, ensure_ascii=False)
-print("\ndone")
+input("\ndone")
