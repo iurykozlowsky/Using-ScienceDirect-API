@@ -1,8 +1,6 @@
 # Using-ScienceDirect-API
 Search and retrieve documents from ScienceDirect.
 
-https://selenium-python.readthedocs.io/installation.html
-
 >"How do I search for documents I want to mine?"
 >Elsevier's own search index for ScienceDirect can be targeted through:
 >	https://api.elsevier.com/content/search/scidir?query=[query].
