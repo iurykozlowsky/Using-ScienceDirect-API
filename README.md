@@ -4,7 +4,6 @@ Search and retrieve documents from ScienceDirect.
 >"How do I search for documents I want to mine?"
 >
 >Elsevier's own search index for ScienceDirect can be targeted through:
-
 >	"/content/search/scidir?query=[query]".
 >	
 >A request to this URL returns a list of documents matching the [query] with their basic metadata and their URIs to retrieve them from api.elsevier.com as well.
