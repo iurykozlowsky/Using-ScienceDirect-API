@@ -1,26 +1,5 @@
 import json, requests
 
-'''
-==================================================================================================================================================================
-
-"How do I search for documents I want to mine?"
-Elsevier's own search index for ScienceDirect can be targeted through:
-
-	https://api.elsevier.com/content/search/scidir?query=[query].
-
-A request to this URL returns a list of documents matching the [query] with their basic metadata and their URIs to retrieve them from api.elsevier.com as well.
-(https://dev.elsevier.com/tecdoc_text_mining.html)
-
-==================================================================================================================================================================
-
-Two search processes will be done here. One to fetch all links and one to merge all articles from those links.
-Through my tests, the Default APIKey only works when searching for individual articles, not when searching for [query].
-To search for [query], I suggest you use the APIKEY available on the website through the Interactive API menu:
-https://dev.elsevier.com/sciencedirect.html#!/ScienceDirect_Search_V2/ScienceDirectSearchV2
-
-=================================================================================================================================================================='''
-
-
 #SEARCH PARAMETERS:
 _search = str(input("Search: "))
 _count = int(input("\n\nNumber of articles (Max 200): "))
