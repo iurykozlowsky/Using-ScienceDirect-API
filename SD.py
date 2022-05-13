@@ -42,9 +42,9 @@ article_count = len(raw_data['search-results']['entry']) #STORE ARTICLE COUNT IN
 
 article_links = []
 for item in range(article_count): #USE LOOPING FROM RANGE AS INDEX TO EACH JSON VALUE
-
+#							    \/
     article_links += {(raw_data['search-results']['entry'][item]['prism:url'])}
-
+#							    /\
 
 
 xml_to_json = {'Accept': 'application/json'} #CONVERT INDIVIDUAL ARTICLE SEARCH RESULT FROM XML TO JSON
